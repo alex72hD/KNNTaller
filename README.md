@@ -1,6 +1,6 @@
-# Taller KNN - Clasificación de riesgo crediticio
+# Taller KNN - Clasificación de riesgo académico
 
-Este proyecto ejecuta un notebook de machine learning para clasificar riesgo crediticio usando el algoritmo K-Nearest Neighbors (KNN).
+Este proyecto ejecuta un notebook de machine learning para clasificar el riesgo académico de estudiantes usando el algoritmo K-Nearest Neighbors (KNN).
 
 ## Requisitos
 
@@ -67,11 +67,9 @@ También puedes abrirlo directamente desde VS Code y ejecutar las celdas con el 
 El proyecto usa el archivo:
 
 ```text
-archive (1)\Financial Risk Classification Dataset.csv
+archive (2)\student_data_100000.csv
 ```
 
-Si aparece un error como `FileNotFoundError`, asegúrate de ejecutar el notebook desde la carpeta raíz del proyecto y que la ruta del dataset no haya sido movida.
+La variable objetivo es `risk_category`, con las categorías `Safe`, `At-Risk` y `High-Risk`. El notebook procesa columnas numéricas y categóricas, imputa valores faltantes, escala las variables numéricas y codifica las categóricas antes de entrenar el modelo.
 
-## Nota
-
-El notebook ya está preparado para trabajar con una base de datos de riesgo crediticio, donde la columna objetivo es `loan_default`.
+Abre y ejecuta `KNN.ipynb` desde la carpeta raíz del proyecto para que la ruta relativa del dataset funcione.
